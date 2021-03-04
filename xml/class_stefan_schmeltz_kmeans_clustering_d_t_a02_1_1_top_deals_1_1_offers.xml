@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_top_deals_1_1_offers" kind="class" language="C#" prot="public">
+    <compoundname>StefanSchmeltzKmeansClusteringDTA02::TopDeals::Offers</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_top_deals_1_1_offers_1ad2d4c8b634b59bbee23fa31aa311d4ff" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double StefanSchmeltzKmeansClusteringDTA02.TopDeals.Offers.amount</definition>
+        <argsstring></argsstring>
+        <name>amount</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="StefanSchmeltzKmeansClusteringDTA02/TopDeals/Offers.cs" line="11" column="23" bodyfile="StefanSchmeltzKmeansClusteringDTA02/TopDeals/Offers.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_top_deals_1_1_offers_1a8ba3194aa9a0d05a72e620acaaa94247" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int StefanSchmeltzKmeansClusteringDTA02.TopDeals.Offers.offerId</definition>
+        <argsstring></argsstring>
+        <name>offerId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="StefanSchmeltzKmeansClusteringDTA02/TopDeals/Offers.cs" line="12" column="20" bodyfile="StefanSchmeltzKmeansClusteringDTA02/TopDeals/Offers.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_top_deals_1_1_offers_1a2b67b4e8da96309693bce1eabe5bd7a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>StefanSchmeltzKmeansClusteringDTA02.TopDeals.Offers.Offers</definition>
+        <argsstring>(int _id)</argsstring>
+        <name>Offers</name>
+        <param>
+          <type>int</type>
+          <declname>_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="StefanSchmeltzKmeansClusteringDTA02/TopDeals/Offers.cs" line="14" column="16" bodyfile="StefanSchmeltzKmeansClusteringDTA02/TopDeals/Offers.cs" bodystart="14" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="StefanSchmeltzKmeansClusteringDTA02/TopDeals/Offers.cs" line="9" column="5" bodyfile="StefanSchmeltzKmeansClusteringDTA02/TopDeals/Offers.cs" bodystart="10" bodyend="18"/>
+    <listofallmembers>
+      <member refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_top_deals_1_1_offers_1ad2d4c8b634b59bbee23fa31aa311d4ff" prot="public" virt="non-virtual"><scope>StefanSchmeltzKmeansClusteringDTA02::TopDeals::Offers</scope><name>amount</name></member>
+      <member refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_top_deals_1_1_offers_1a8ba3194aa9a0d05a72e620acaaa94247" prot="public" virt="non-virtual"><scope>StefanSchmeltzKmeansClusteringDTA02::TopDeals::Offers</scope><name>offerId</name></member>
+      <member refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_top_deals_1_1_offers_1a2b67b4e8da96309693bce1eabe5bd7a9" prot="public" virt="non-virtual"><scope>StefanSchmeltzKmeansClusteringDTA02::TopDeals::Offers</scope><name>Offers</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

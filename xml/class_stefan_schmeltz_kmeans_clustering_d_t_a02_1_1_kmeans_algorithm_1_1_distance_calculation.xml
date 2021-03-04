@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_kmeans_algorithm_1_1_distance_calculation" kind="class" language="C#" prot="public">
+    <compoundname>StefanSchmeltzKmeansClusteringDTA02::KmeansAlgorithm::DistanceCalculation</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_kmeans_algorithm_1_1_distance_calculation_1a0fb736f0711ce80a9f25f28eefbd06c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void StefanSchmeltzKmeansClusteringDTA02.KmeansAlgorithm.DistanceCalculation.DistanceObjectToCentroids</definition>
+        <argsstring>(List&lt; Point &gt; datapoints, List&lt; Centroid &gt; Centroids, IDistance distanceType)</argsstring>
+        <name>DistanceObjectToCentroids</name>
+        <param>
+          <type>List&lt; <ref refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_point" kindref="compound">Point</ref> &gt;</type>
+          <declname>datapoints</declname>
+        </param>
+        <param>
+          <type>List&lt; <ref refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_vector_1_1_centroid" kindref="compound">Centroid</ref> &gt;</type>
+          <declname>Centroids</declname>
+        </param>
+        <param>
+          <type><ref refid="interface_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_distance_1_1_i_distance" kindref="compound">IDistance</ref></type>
+          <declname>distanceType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="StefanSchmeltzKmeansClusteringDTA02/KmeansAlgorithm/DistanceCalculation.cs" line="15" column="21" bodyfile="StefanSchmeltzKmeansClusteringDTA02/KmeansAlgorithm/DistanceCalculation.cs" bodystart="15" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="StefanSchmeltzKmeansClusteringDTA02/KmeansAlgorithm/DistanceCalculation.cs" line="12" column="5" bodyfile="StefanSchmeltzKmeansClusteringDTA02/KmeansAlgorithm/DistanceCalculation.cs" bodystart="13" bodyend="38"/>
+    <listofallmembers>
+      <member refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_kmeans_algorithm_1_1_distance_calculation_1a0fb736f0711ce80a9f25f28eefbd06c5" prot="public" virt="non-virtual"><scope>StefanSchmeltzKmeansClusteringDTA02::KmeansAlgorithm::DistanceCalculation</scope><name>DistanceObjectToCentroids</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

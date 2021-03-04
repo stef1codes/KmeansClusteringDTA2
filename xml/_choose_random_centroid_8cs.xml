@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="_choose_random_centroid_8cs" kind="file" language="C#">
+    <compoundname>ChooseRandomCentroid.cs</compoundname>
+    <innerclass refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_kmeans_1_1_choose_random_centroid" prot="public">StefanSchmeltzKmeansClusteringDTA02::Kmeans::ChooseRandomCentroid</innerclass>
+    <innernamespace refid="namespace_stefan_schmeltz_kmeans_clustering_d_t_a02">StefanSchmeltzKmeansClusteringDTA02</innernamespace>
+    <innernamespace refid="namespace_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_kmeans">StefanSchmeltzKmeansClusteringDTA02::Kmeans</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespace_stefan_schmeltz_kmeans_clustering_d_t_a02" kindref="compound">StefanSchmeltzKmeansClusteringDTA02</ref>.<ref refid="namespace_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data" kindref="compound">ReadData</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespace_stefan_schmeltz_kmeans_clustering_d_t_a02" kindref="compound">StefanSchmeltzKmeansClusteringDTA02</ref>.<ref refid="namespace_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data" kindref="compound">ReadData</ref>.<ref refid="namespace_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_vector" kindref="compound">Vector</ref>;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections.Generic;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Linq;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Text;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Threading.Tasks;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="namespace_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_kmeans" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_kmeans" kindref="compound">StefanSchmeltzKmeansClusteringDTA02.Kmeans</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11" refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_kmeans_1_1_choose_random_centroid" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_kmeans_1_1_choose_random_centroid" kindref="compound">ChooseRandomCentroid</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="14" refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_kmeans_1_1_choose_random_centroid_1a1726dea716a85c472ae3715c10d3b045" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>List&lt;Centroid&gt;<sp/><ref refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_kmeans_1_1_choose_random_centroid_1a1726dea716a85c472ae3715c10d3b045" kindref="member">RandomCentroids</ref>(List&lt;Point&gt;<sp/>datapoints,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numberClusters)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>random<sp/>numbers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>List&lt;Centroid&gt;<sp/>randomCentroids<sp/>=<sp/>new<sp/>List&lt;Centroid&gt;();</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>List&lt;int&gt;<sp/>rdmnumbers<sp/>=<sp/>new<sp/>List&lt;int&gt;();</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Random<sp/>random<sp/>=<sp/>new<sp/>Random();</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(int<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>numberClusters;<sp/>i++)</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>num<sp/>=<sp/>random.Next(datapoints.Count);</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rdmnumbers.Add(num);</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>randomCentroids.Add(new<sp/>Centroid(i,<sp/>datapoints[num]));</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//data<sp/>splitted</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//up<sp/>with<sp/>the<sp/>amount<sp/>of<sp/>numbers<sp/>of<sp/>clusters,<sp/>for<sp/>each<sp/>iteration<sp/>take<sp/>the<sp/>i<sp/>*<sp/>k<sp/>of<sp/>the<sp/>list</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>List&lt;Centroid&gt;<sp/>randomCentroids<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>List&lt;Centroid&gt;();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>List&lt;int&gt;<sp/>splitteddatanumbers<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>List&lt;int&gt;();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>numberClusters<sp/>;<sp/>i++)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>randomCentroids.Add(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_vector_1_1_centroid" kindref="compound">Centroid</ref>(i,<sp/>datapoints[(i<sp/>*<sp/>(datapoints.Count<sp/>-<sp/>1)<sp/>/<sp/>numberClusters)]));</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>splitteddatanumbers.Add((i<sp/>*<sp/>(datapoints.Count<sp/>-<sp/>1)<sp/>/<sp/>numberClusters));</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>randomCentroids;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="StefanSchmeltzKmeansClusteringDTA02/KmeansAlgorithm/ChooseRandomCentroid.cs"/>
+  </compounddef>
+</doxygen>

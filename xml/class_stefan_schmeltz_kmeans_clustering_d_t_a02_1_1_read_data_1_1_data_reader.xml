@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_data_reader" kind="class" language="C#" prot="public">
+    <compoundname>StefanSchmeltzKmeansClusteringDTA02::ReadData::DataReader</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_data_reader_1a30980ba353b2a3f8e4b2d876e00c8e1b" prot="public" static="no" mutable="no">
+        <type>List&lt; Tuple&lt; int, double &gt; &gt;</type>
+        <definition>List&lt;Tuple&lt;int, double&gt; &gt; StefanSchmeltzKmeansClusteringDTA02.ReadData.DataReader.rowsumdata</definition>
+        <argsstring></argsstring>
+        <name>rowsumdata</name>
+        <initializer>= new List&lt;Tuple&lt;int, double&gt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="StefanSchmeltzKmeansClusteringDTA02/ReadData/DataReader.cs" line="14" column="21" bodyfile="StefanSchmeltzKmeansClusteringDTA02/ReadData/DataReader.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_data_reader_1aafb4e8d44da099dc46348325f7e800f5" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string StefanSchmeltzKmeansClusteringDTA02.ReadData.DataReader.PATH</definition>
+        <argsstring></argsstring>
+        <name>PATH</name>
+        <initializer>= &quot;C:/Users/Gebruiker/source/repos/StefanSchmeltzKmeansClusteringDTA02/StefanSchmeltzKmeansClusteringDTA02/ReadData/WineData.csv&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="StefanSchmeltzKmeansClusteringDTA02/ReadData/DataReader.cs" line="15" column="24" bodyfile="StefanSchmeltzKmeansClusteringDTA02/ReadData/DataReader.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_data_reader_1a811557b536d1b5bbfaf87e55221da3db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; List&lt; float &gt; &gt;</type>
+        <definition>List&lt;List&lt;float&gt; &gt; StefanSchmeltzKmeansClusteringDTA02.ReadData.DataReader.Lines</definition>
+        <argsstring>()</argsstring>
+        <name>Lines</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="StefanSchmeltzKmeansClusteringDTA02/ReadData/DataReader.cs" line="17" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_data_reader_1abc5aea76b9eeba21695fcf5db260ba57" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_point" kindref="compound">Point</ref> &gt;</type>
+        <definition>List&lt;Point&gt; StefanSchmeltzKmeansClusteringDTA02.ReadData.DataReader.Read</definition>
+        <argsstring>()</argsstring>
+        <name>Read</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="StefanSchmeltzKmeansClusteringDTA02/ReadData/DataReader.cs" line="20" column="21" bodyfile="StefanSchmeltzKmeansClusteringDTA02/ReadData/DataReader.cs" bodystart="20" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="StefanSchmeltzKmeansClusteringDTA02/ReadData/DataReader.cs" line="11" column="5" bodyfile="StefanSchmeltzKmeansClusteringDTA02/ReadData/DataReader.cs" bodystart="12" bodyend="54"/>
+    <listofallmembers>
+      <member refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_data_reader_1a811557b536d1b5bbfaf87e55221da3db" prot="public" virt="non-virtual"><scope>StefanSchmeltzKmeansClusteringDTA02::ReadData::DataReader</scope><name>Lines</name></member>
+      <member refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_data_reader_1aafb4e8d44da099dc46348325f7e800f5" prot="private" virt="non-virtual"><scope>StefanSchmeltzKmeansClusteringDTA02::ReadData::DataReader</scope><name>PATH</name></member>
+      <member refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_data_reader_1abc5aea76b9eeba21695fcf5db260ba57" prot="public" virt="non-virtual"><scope>StefanSchmeltzKmeansClusteringDTA02::ReadData::DataReader</scope><name>Read</name></member>
+      <member refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_data_reader_1a30980ba353b2a3f8e4b2d876e00c8e1b" prot="public" virt="non-virtual"><scope>StefanSchmeltzKmeansClusteringDTA02::ReadData::DataReader</scope><name>rowsumdata</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

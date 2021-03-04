@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="_distance_calculation_8cs" kind="file" language="C#">
+    <compoundname>DistanceCalculation.cs</compoundname>
+    <innerclass refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_kmeans_algorithm_1_1_distance_calculation" prot="public">StefanSchmeltzKmeansClusteringDTA02::KmeansAlgorithm::DistanceCalculation</innerclass>
+    <innernamespace refid="namespace_stefan_schmeltz_kmeans_clustering_d_t_a02">StefanSchmeltzKmeansClusteringDTA02</innernamespace>
+    <innernamespace refid="namespace_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_kmeans_algorithm">StefanSchmeltzKmeansClusteringDTA02::KmeansAlgorithm</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespace_stefan_schmeltz_kmeans_clustering_d_t_a02" kindref="compound">StefanSchmeltzKmeansClusteringDTA02</ref>.<ref refid="namespace_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_distance" kindref="compound">Distance</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespace_stefan_schmeltz_kmeans_clustering_d_t_a02" kindref="compound">StefanSchmeltzKmeansClusteringDTA02</ref>.<ref refid="namespace_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data" kindref="compound">ReadData</ref>;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespace_stefan_schmeltz_kmeans_clustering_d_t_a02" kindref="compound">StefanSchmeltzKmeansClusteringDTA02</ref>.<ref refid="namespace_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data" kindref="compound">ReadData</ref>.<ref refid="namespace_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_vector" kindref="compound">Vector</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections.Generic;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Linq;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Text;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Threading.Tasks;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_kmeans_algorithm" kindref="compound">StefanSchmeltzKmeansClusteringDTA02.KmeansAlgorithm</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12" refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_kmeans_algorithm_1_1_distance_calculation" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_kmeans_algorithm_1_1_distance_calculation" kindref="compound">DistanceCalculation</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="15" refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_kmeans_algorithm_1_1_distance_calculation_1a0fb736f0711ce80a9f25f28eefbd06c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_kmeans_algorithm_1_1_distance_calculation_1a0fb736f0711ce80a9f25f28eefbd06c5" kindref="member">DistanceObjectToCentroids</ref>(List&lt;Point&gt;<sp/>datapoints,<sp/>List&lt;Centroid&gt;<sp/>Centroids,<sp/><ref refid="interface_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_distance_1_1_i_distance" kindref="compound">IDistance</ref><sp/>distanceType)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>1.foreach<sp/>datapoint<sp/>calculate<sp/>the<sp/>distance<sp/>measure<sp/>the<sp/>distance<sp/>of<sp/>the<sp/>centroids<sp/>and<sp/>datapoints.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>datapoints.ForEach(datapoint<sp/>=&gt;<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>centroidDistances<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>List&lt;(int,<sp/>double)&gt;();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Centroids.ForEach(<ref refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_vector_1_1_centroid" kindref="compound">Centroid</ref><sp/>=&gt;<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//2.<sp/>calculate<sp/>the<sp/>distance<sp/>between<sp/>the<sp/>datapoint<sp/>and<sp/>the<sp/>centroids.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>var<sp/>distanceCentroid<sp/>=<sp/><sp/>new<sp/>DistanceFactory().ChooseTypeDistance(Centroid.Points,<sp/>datapoint.Data,<sp/>distanceType);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>distanceCentroid<sp/>=<sp/>distanceType.<ref refid="interface_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_distance_1_1_i_distance_1a9968f0bc12e81f582ddd20774a3071d1" kindref="member">Distance</ref>(<ref refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_vector_1_1_centroid" kindref="compound">Centroid</ref>.<ref refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_vector_1_1_centroid_1a777c9660086dcb5f73c0daa6a2fcb685" kindref="member">Points</ref>,<sp/>datapoint.Data);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//3.<sp/>Add<sp/>the<sp/>distances<sp/>between<sp/>the<sp/>centroid<sp/>and<sp/>the<sp/>datapoint<sp/>into<sp/>a<sp/>list</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>centroidDistances.Add((<ref refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_vector_1_1_centroid" kindref="compound">Centroid</ref>.<ref refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_vector_1_1_centroid_1ad8ae2b988e8b361ee83a69a5d71a8c27" kindref="member">Id</ref>,<sp/>distanceCentroid));<sp/></highlight><highlight class="comment">//Add<sp/>the<sp/>calculated<sp/>distances<sp/>between<sp/>the<sp/>customer<sp/>and<sp/>all<sp/>centroids</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//.4<sp/>take<sp/>the<sp/>centroid<sp/>with<sp/>the<sp/>least<sp/>distance<sp/>compared<sp/>to<sp/>the<sp/>centroid<sp/>and<sp/>set<sp/>the<sp/>id<sp/>of<sp/>the<sp/>centroid<sp/>to<sp/>the<sp/>datapoint.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>datapoint.Centroid<sp/>=<sp/>centroidDistances.OrderBy(centroid<sp/>=&gt;<sp/>centroid.Item2).First().Item1;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="StefanSchmeltzKmeansClusteringDTA02/KmeansAlgorithm/DistanceCalculation.cs"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="dir_09deecc9cfab750506f82a1c1ed1cf25" kind="dir">
+    <compoundname>StefanSchmeltzKmeansClusteringDTA02/KmeansAlgorithm</compoundname>
+    <innerfile refid="_choose_random_centroid_8cs">ChooseRandomCentroid.cs</innerfile>
+    <innerfile refid="_create_clusters_8cs">CreateClusters.cs</innerfile>
+    <innerfile refid="_distance_calculation_8cs">DistanceCalculation.cs</innerfile>
+    <innerfile refid="_kmeans_8cs">Kmeans.cs</innerfile>
+    <innerfile refid="_recompute_centroids_8cs">RecomputeCentroids.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="StefanSchmeltzKmeansClusteringDTA02/KmeansAlgorithm/"/>
+  </compounddef>
+</doxygen>

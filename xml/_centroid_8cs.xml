@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="_centroid_8cs" kind="file" language="C#">
+    <compoundname>Centroid.cs</compoundname>
+    <innerclass refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_vector_1_1_centroid" prot="public">StefanSchmeltzKmeansClusteringDTA02::ReadData::Vector::Centroid</innerclass>
+    <innernamespace refid="namespace_stefan_schmeltz_kmeans_clustering_d_t_a02">StefanSchmeltzKmeansClusteringDTA02</innernamespace>
+    <innernamespace refid="namespace_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data">StefanSchmeltzKmeansClusteringDTA02::ReadData</innernamespace>
+    <innernamespace refid="namespace_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_vector">StefanSchmeltzKmeansClusteringDTA02::ReadData::Vector</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections.Generic;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Linq;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Text;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Threading.Tasks;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="namespace_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_vector" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_vector" kindref="compound">StefanSchmeltzKmeansClusteringDTA02.ReadData.Vector</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9" refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_vector_1_1_centroid" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_vector_1_1_centroid" kindref="compound">Centroid</ref><sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="11" refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_vector_1_1_centroid_1a777c9660086dcb5f73c0daa6a2fcb685" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>List&lt;double&gt;<sp/><ref refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_vector_1_1_centroid_1a777c9660086dcb5f73c0daa6a2fcb685" kindref="member">Points</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>List&lt;double&gt;();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="13" refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_vector_1_1_centroid_1aff63e4a4aaf79b648868b8afea3e410e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>List&lt;Point&gt;<sp/><ref refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_vector_1_1_centroid_1aff63e4a4aaf79b648868b8afea3e410e" kindref="member">cluster</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>List&lt;Point&gt;();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_vector_1_1_centroid_1a5704a985e36352af04869dff98fd744c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_vector_1_1_centroid_1a5704a985e36352af04869dff98fd744c" kindref="member">Centroid</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/><ref refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_point" kindref="compound">Point</ref><sp/>cPoints)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_vector_1_1_centroid_1ad8ae2b988e8b361ee83a69a5d71a8c27" kindref="member">Id</ref><sp/>=<sp/>id;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_vector_1_1_centroid_1a777c9660086dcb5f73c0daa6a2fcb685" kindref="member">Points</ref><sp/>=<sp/>cPoints.<ref refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_point_1a2ab665fab06480416c160bfe2274db58" kindref="member">Data</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22" refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_vector_1_1_centroid_1a934c810220545dcfd47c29aa07920a29" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_vector_1_1_centroid_1a934c810220545dcfd47c29aa07920a29" kindref="member">Centroid</ref>()<sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_vector_1_1_centroid_1ad8ae2b988e8b361ee83a69a5d71a8c27" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_read_data_1_1_vector_1_1_centroid_1ad8ae2b988e8b361ee83a69a5d71a8c27" kindref="member">Id</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="StefanSchmeltzKmeansClusteringDTA02/Vectors/Centroid.cs"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="_offers_8cs" kind="file" language="C#">
+    <compoundname>Offers.cs</compoundname>
+    <innerclass refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_top_deals_1_1_offers" prot="public">StefanSchmeltzKmeansClusteringDTA02::TopDeals::Offers</innerclass>
+    <innernamespace refid="namespace_stefan_schmeltz_kmeans_clustering_d_t_a02">StefanSchmeltzKmeansClusteringDTA02</innernamespace>
+    <innernamespace refid="namespace_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_top_deals">StefanSchmeltzKmeansClusteringDTA02::TopDeals</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections.Generic;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Linq;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Text;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Threading.Tasks;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="namespace_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_top_deals" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_top_deals" kindref="compound">StefanSchmeltzKmeansClusteringDTA02.TopDeals</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9" refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_top_deals_1_1_offers" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_top_deals_1_1_offers" kindref="compound">Offers</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="11" refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_top_deals_1_1_offers_1ad2d4c8b634b59bbee23fa31aa311d4ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_top_deals_1_1_offers_1ad2d4c8b634b59bbee23fa31aa311d4ff" kindref="member">amount</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="12" refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_top_deals_1_1_offers_1a8ba3194aa9a0d05a72e620acaaa94247" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_top_deals_1_1_offers_1a8ba3194aa9a0d05a72e620acaaa94247" kindref="member">offerId</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_top_deals_1_1_offers_1a2b67b4e8da96309693bce1eabe5bd7a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_top_deals_1_1_offers_1a2b67b4e8da96309693bce1eabe5bd7a9" kindref="member">Offers</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_id)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_stefan_schmeltz_kmeans_clustering_d_t_a02_1_1_top_deals_1_1_offers_1a8ba3194aa9a0d05a72e620acaaa94247" kindref="member">offerId</ref><sp/>=<sp/>_id;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="StefanSchmeltzKmeansClusteringDTA02/TopDeals/Offers.cs"/>
+  </compounddef>
+</doxygen>
